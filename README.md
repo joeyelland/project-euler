@@ -1,2 +1,2 @@
 # project-euler
-My attempts at the problems on https://projecteuler.net in Python
+My attempts of the problems found on https://projecteuler.net in Python
