@@ -15,4 +15,4 @@ while (next_num <= 4000000):
         i += 1
         k += 1
 
-print fibo_arr, total
+print total
