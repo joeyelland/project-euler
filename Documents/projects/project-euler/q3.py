@@ -7,14 +7,19 @@ prime_factors = []
 n = int(input("input n = "))
 
 def find_factors(value): #Lists factors of value
-    for i in range(1, value + 1):
-        if (value % i == 0):
-            factors.append(i)
-        else:
-        	pass
-    return factors
+	i = 1
+	j = 0
+  	while (i <= value):
+		if (value % i == 0):
+			factors.append(i)
+	  		i += 1
+	  		print factors[j]
+	  		j += 1
+		else:
+	  		i += 1
+ 	return factors
 
-def find_largest_prime(factors): #outputs the largest prime factor
+def find_largest_prime(factors):
 	for i in factors:
 		if all(i % j != 0 for j in range(2,i)):
 			prime_factors.append(i)
