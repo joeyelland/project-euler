@@ -14,7 +14,7 @@ def find_factors(value): #Lists factors of value
         	pass
     return factors
 
-def find_largest_prime(factors):
+def find_largest_prime(factors): #outputs the largest prime factor
 	for i in factors:
 		if all(i % j != 0 for j in range(2,i)):
 			prime_factors.append(i)
