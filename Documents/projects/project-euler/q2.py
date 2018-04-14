@@ -15,7 +15,7 @@ while (next_num <= 4000000):
     fibo_arr.append(next_num)
     if (next_num % 2 == 0):
         total += next_num
-i += 1
-k += 1
+    i += 1
+    k += 1
 
 print total
