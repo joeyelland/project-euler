@@ -8,15 +8,11 @@ n = int(input("input n = "))
 
 def find_factors(value): #Lists factors of value
 	i = 1
-	j = 0
   	while (i <= value):
 		if (value % i == 0):
 			factors.append(i)
-	  		i += 1
-	  		print factors[j]
-	  		j += 1
-		else:
-	  		i += 1
+	  		print factors[i - 1]
+		i += 1
  	return factors
 
 def find_largest_prime(factors):
@@ -26,5 +22,5 @@ def find_largest_prime(factors):
 		else:
 			pass
 	return max(prime_factors)
-	
+
 print find_largest_prime(find_factors(n))
